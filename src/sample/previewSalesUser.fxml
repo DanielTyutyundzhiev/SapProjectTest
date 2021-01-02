@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="messageLabel" prefHeight="587.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PreviewSalesUserController">
+    <children>
+        <TableView fx:id="table" layoutX="213.0" prefHeight="329.0" prefWidth="510.0" style="-fx-background-color: F88C75;">
+            <columns>
+                <TableColumn fx:id="col_salesID" prefWidth="63.0" text="Sale ID" />
+                <TableColumn fx:id="col_date" prefWidth="84.0" text="Date" />
+                <TableColumn fx:id="col_productName" prefWidth="116.0" text="Product Name" />
+                <TableColumn fx:id="col_Quantity" prefWidth="123.0" text="Quantity" />
+                <TableColumn fx:id="col_finalPrice" prefWidth="123.0" text="Final Price" />
+            </columns>
+        </TableView>
+        <Label layoutX="27.0" layoutY="138.0" text="Enter a sale id you would like " />
+        <Label layoutX="28.0" layoutY="162.0" text="to preview in detail:" />
+        <Button layoutX="32.0" layoutY="223.0" mnemonicParsing="false" onAction="#previewDetails" text="preview details" />
+        <Label layoutX="290.0" layoutY="356.0" text="Product ID:" />
+        <Label fx:id="productId" layoutX="287.0" layoutY="373.0" prefHeight="17.0" prefWidth="171.0" />
+        <Label layoutX="287.0" layoutY="390.0" text="Product Name:" />
+        <Label fx:id="productName" layoutX="287.0" layoutY="407.0" prefHeight="17.0" prefWidth="104.0" />
+        <Label layoutX="290.0" layoutY="424.0" text="Product Type:" />
+        <Label fx:id="productType" layoutX="287.0" layoutY="441.0" prefHeight="17.0" prefWidth="157.0" />
+        <Label layoutX="287.0" layoutY="458.0" text="Product Brand:" />
+        <Label fx:id="productBrand" layoutX="287.0" layoutY="475.0" prefHeight="17.0" prefWidth="163.0" />
+        <Label layoutX="287.0" layoutY="492.0" text="Product Singe Price:" />
+        <Label fx:id="productPrice" layoutX="287.0" layoutY="509.0" prefHeight="17.0" prefWidth="106.0" />
+        <Label layoutX="290.0" layoutY="526.0" text="Product quantity In Stock:" />
+        <Label fx:id="productQuantity" layoutX="287.0" layoutY="543.0" prefHeight="17.0" prefWidth="163.0" />
+        <Label layoutX="553.0" layoutY="373.0" text="User ID:" />
+        <Label fx:id="userId" layoutX="553.0" layoutY="390.0" prefHeight="17.0" prefWidth="116.0" />
+        <Label layoutX="553.0" layoutY="407.0" text="User First Name:" />
+        <Label fx:id="userFirstName" layoutX="553.0" layoutY="424.0" prefHeight="17.0" prefWidth="126.0" />
+        <Label layoutX="553.0" layoutY="441.0" text="User Last Name:" />
+        <Label layoutX="553.0" layoutY="475.0" text="User Email:" />
+        <Label fx:id="userLastName" layoutX="553.0" layoutY="458.0" prefHeight="17.0" prefWidth="104.0" />
+        <Label fx:id="userEmail" layoutX="558.0" layoutY="492.0" prefHeight="17.0" prefWidth="116.0" />
+        <TextField fx:id="idField" layoutX="32.0" layoutY="189.0" />
+        <Label layoutX="32.0" layoutY="263.0" prefHeight="17.0" prefWidth="149.0" />
+    </children>
+</AnchorPane>

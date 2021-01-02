@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="230.0" style="-fx-background-color: F88C75;" BorderPane.alignment="CENTER" />
+    </left>
+    <center>
+        <AnchorPane focusTraversable="true" prefHeight="200.0" prefWidth="370.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="login" layoutX="77.0" layoutY="253.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="38.0" prefWidth="231.0" style="-fx-background-color: F88C75;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Label layoutX="51.0" layoutY="128.0" prefHeight="17.0" prefWidth="60.0" text="Username:" />
+                <TextField fx:id="username" layoutX="124.0" layoutY="124.0" prefHeight="25.0" prefWidth="146.0" promptText="Username" />
+                <Label layoutX="55.0" layoutY="163.0" text="Password:" />
+                <PasswordField fx:id="password" layoutX="124.0" layoutY="159.0" prefHeight="25.0" prefWidth="145.0" promptText="Password" />
+                <Button fx:id="cancel" layoutX="75.0" layoutY="302.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: F88C75;" text="Close" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Label fx:id="labelMessage" layoutX="75.0" layoutY="192.0" prefHeight="17.0" prefWidth="208.0" textFill="#d00e0e" />
+                <CheckBox fx:id="isAdmin" layoutX="108.0" layoutY="212.0" mnemonicParsing="false" text="Admin" />
+                <CheckBox fx:id="isSalesRep" layoutX="185.0" layoutY="212.0" mnemonicParsing="false" text="Sales Represantative" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

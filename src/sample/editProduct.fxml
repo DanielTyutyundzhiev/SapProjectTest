@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditProductController">
+    <children>
+        <TableView fx:id="table" layoutX="213.0" prefHeight="257.0" prefWidth="630.0" style="-fx-background-color: F88C75;">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="42.0" text="id" />
+                <TableColumn fx:id="col_productName" prefWidth="105.0" text="Product Name" />
+                <TableColumn fx:id="col_productType" prefWidth="116.0" text="Product Type" />
+                <TableColumn fx:id="col_productBrand" prefWidth="123.0" text="Product Brand" />
+                <TableColumn fx:id="col_productPrice" prefWidth="123.0" text="Product Price" />
+                <TableColumn fx:id="col_productQuantity" prefWidth="123.0" text="Product Quantity" />
+            </columns>
+        </TableView>
+        <Label layoutX="27.0" layoutY="166.0" text="Enter a product id you would like " />
+        <Label layoutX="28.0" layoutY="183.0" text="to edit from the database:" />
+        <TextField fx:id="idField" layoutX="32.0" layoutY="207.0" />
+        <TextField fx:id="nameField" layoutX="212.0" layoutY="284.0" />
+        <TextField fx:id="typeField" layoutX="213.0" layoutY="338.0" />
+        <TextField fx:id="brandField" layoutX="421.0" layoutY="284.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="priceField" layoutX="421.0" layoutY="336.0" />
+        <Label fx:id="firstnameLabel" layoutX="212.0" layoutY="266.0" text="Enter new product name (optional)" />
+        <Label fx:id="lastnameLabel" layoutX="213.0" layoutY="315.0" text="Enter new  product type (optional)" />
+        <Label fx:id="usernameLabel" layoutX="421.0" layoutY="266.0" text="Enter new product brand (optional)" />
+        <Label fx:id="passwordLabel" layoutX="421.0" layoutY="322.0" text="Enter new product price (optional)" />
+        <TextField fx:id="quantityField" layoutX="634.0" layoutY="309.0" />
+        <Label fx:id="quantityLabel" layoutX="634.0" layoutY="285.0" text="Enter new product quantity (optional)" />
+        <Label fx:id="deleteMessage" layoutX="32.0" layoutY="219.0" prefHeight="17.0" prefWidth="130.0" />
+        <Button layoutX="42.0" layoutY="254.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: F88C75;" text="Update Table" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Button fx:id="editButton" layoutX="41.0" layoutY="290.0" mnemonicParsing="false" onAction="#editSPonAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: F88C75;" text="Edit" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <ImageView fitHeight="109.0" fitWidth="105.0" layoutX="55.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@154-1541092_small-zbgg-edit-edit-small-icon-png-transparent.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
